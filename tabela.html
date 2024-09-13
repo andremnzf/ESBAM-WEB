@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Brasileirão 2024</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" width="150px">Clube</th>
+                <th>Pts  |</th>
+                <th>Pj |</th>
+                <th>V |</th>
+                <th>E |</th>
+                <th>D |</th>
+                <th>GM |</th>
+                <th>GC |</th>
+                <th>SG |</th>
+                <th>Ultimas 5 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tr>td*12 -->
+            <tr>
+                <td>1 |</td>
+                <td><img height="22px" src="data:image/png;base64,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" alt=""></td>
+                <td>EC Vitória</td>
+                <td>50 |</td>
+                <td>25 |</td>
+                <td>15 |</td>
+                <td>5 |</td>
+                <td>5 |</td>
+                <td>43 |</td>
+                <td>24 |</td>
+                <td>19 |</td>
+                <td>
+                    <img  src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img  src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>2 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/hHwT8LwRmYCAGxQ-STLxYA_48x48.png" alt=""></td>
+                <td>Vasco</td>
+                <td>48 |</td>
+                <td>25 |</td>
+                <td>14 |</td>
+                <td>6 |</td>
+                <td>5 |</td>
+                <td>31 |</td>
+                <td>24 |</td>
+                <td>7 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+              <td>3 |</td>
+              <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png" alt=""></td>
+              <td>Atlético-GO </td>
+              <td>47 |</td>
+              <td>25 |</td>
+              <td>14 |</td>
+              <td>5 |</td>
+              <td>6 |</td>
+              <td>38 |</td>
+              <td>19 |</td>
+              <td>19 |</td>
+              <td>
+                <img src="/assets/images/brasileirao/empate.svg" alt="">
+                <img src="/assets/images/brasileirao/empate.svg" alt="">
+                <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+
+              </td>
+            </tr>
+            <tr>
+                <td>4 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png" alt=""></td>
+                <td>Cuiabá </td>
+                <td>44 |</td>
+                <td>24 |</td>
+                <td>13 |</td>
+                <td>5 |</td>
+                <td>6 |</td>
+                <td>39 |</td>
+                <td>28 |</td>
+                <td>11 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>5 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png" alt=""></td>
+                <td>Grêmio</td>
+                <td>41 |</td>
+                <td>25 |</td>
+                <td>12 |</td>
+                <td>5 |</td>
+                <td>8 |</td>
+                <td>34 |</td>
+                <td>26 |</td>
+                <td>8 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>6 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/u_L7Mkp33uNmFTv3uUlXeQ_48x48.png"alt=""></td>
+                <td>Criciúma</td>
+                <td>41 |</td>
+                <td>25 |</td>
+                <td>12 |</td>
+                <td>5 |</td>
+                <td>8 |</td>
+                <td>33 |</td>
+                <td>26 |</td>
+                <td>7 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>7 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png" alt=""></td>
+                <td>Juventude</td>
+                <td>39 | |</td>
+                <td>25 |</td>
+                <td>11 |</td>
+                <td>6 |</td>
+                <td>8 |</td>
+                <td>34 |</td>
+                <td>27 |</td>
+                <td>7 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>8 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png" alt=""></td>
+                <td>Internacional</td>
+                <td>35 |</td>
+                <td>23 |</td>
+                <td>9 |</td>
+                <td>8 |</td>
+                <td>6 |</td>
+                <td>24 |</td>
+                <td>20 |</td>
+                <td>4 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>9 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png" alt=""></td>
+                <td>Atlético-MG</td>
+                <td>34 |</td>
+                <td>24 |</td>
+                <td>10 |</td>
+                <td>4 |</td>
+                <td>10 |</td>
+                <td>29 |</td>
+                <td>34 |</td>
+                <td>-5 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>10 |</td>
+                <td><img height="22px" src="https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png" alt=""></td>
+                <td>Bragantino</td>
+                <td>33 |</td>
+                <td>23 |</td>
+                <td>8 |</td>
+                <td>9 |</td>
+                <td>6 |</td>
+                <td>32 |</td>
+                <td>33 |</td>
+                <td>-1 |</td>
+                <td>
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/empate.svg" alt="">
+                    <img src="/assets/images/brasileirao/derrota.svg" alt="">
+                    <img src="/assets/images/brasileirao/vitoria.svg" alt="">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
