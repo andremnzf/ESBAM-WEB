@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Deixe seu Feedback</h1>
+<p>Queremos saber sua opinião sobre as belezas naturais!</p>
+
+<form id="feedbackForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Seu nome">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Sua mensagem"></textarea>
+
+    <button type="submit">Enviar Feedback</button>
+    <p id="error" class="error"></p>
+</form>
+
+<script>
+    document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Previne o envio do formulário
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const errorElement = document.getElementById('error');
+
+        let errorMessage = '';
+
+        if (!name) {
+            errorMessage += 'O nome é obrigatório.<br>';
+        }
+        if (!email) {
+            errorMessage += 'O e-mail é obrigatório.<br>';
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errorMessage += 'O e-mail não é válido.<br>';
+        }
+        if (!message) {
+            errorMessage += 'A mensagem é obrigatória.<br>';
+        }
+
+        if (errorMessage) {
+            errorElement.innerHTML = errorMessage;
+        } else {
+            errorElement.innerHTML = '';
+            alert('Obrigado pelo seu feedback!');
+            this.reset(); // Limpa o formulário
+        }
+    });
+</script>
+
+</body>
+</html>

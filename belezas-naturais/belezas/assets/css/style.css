@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*INICIO ÁREA MENU*/
+.menu-space{
+    width: 100%;
+    position: absolute;
+}
+.menu-principal{
+    padding: 50px;
+    height: 70px;
+    margin: 2%;
+    background-color: #FF9500;
+    border-radius: 50px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.menu-lista{
+    display: flex;
+    list-style-type: none;
+}
+.menu-link{
+    text-decoration: none;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+#back-button{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+#back-button i{
+    font-size: 20px;
+    color: #FF6200;
+}
+#back-button:hover{
+    padding: 17px;
+    border-radius: 100%;
+    transition: 0.6s;
+}
+.menu-item{
+    text-align: center;
+    padding: 30px;
+    width: 300px;
+    border-radius: 70px;
+    color: #fff;
+    font-family: "Jaro", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #FF6200;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.menu-item:hover{
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #FF6200;
+    transition: 0.9s;
+}
+/*FIM ÁREA MENU*/
+
+/*pg marrocos*/
+
+/*INÍCIO DA ÁREA PRINCIPAL*/
+
+/*SEÇÃO SAARA*/
+.saara-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/saara.png');
+}
+.saara-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 350px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.saara-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.saara-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.saara-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*SEÇÃO ATLAS*/
+.atlas-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/atlas.png');
+}
+.atlas-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 400px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.atlas-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.atlas-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.atlas-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/*FIM DA ÁREA PRINCIPAL*/
+
+/*INÍCIO DO FOOTER*/
+.footer-information{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 125px;
+    margin-top: -20px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #FF0000, #FF6200);
+}
+/*FIM DO FOOTER*/
+
+/*INICIO ÁREA VIDEO*/
+.video-box{
+    background-color: #FF6200;
+}
+.video-box iframe{
+    width: 70%;
+    height: 500px;
+    margin: 40px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+.video-box iframe:hover{
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.5),
+        0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: transform 1s;
+    border-radius: 10px;
+}
+/*FIM ÁREA VIDEO*/
+
+/*INICIO ÁREA MAPA*/
+.mapa-box iframe{
+    width: 100%;
+    height: 600px;
+}
+/*FIM ÁREA MAPA*/
+
+
+/*pg magadascar*/
+
+/*INICIO ÁREA PRINCIPAL*/
+
+/*INICIO ÁREA RELIGIAO*/
+.religiao-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/religiao.png');
+}
+.religiao-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 350px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.religiao-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.religiao-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.religiao-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/*FIM ÁREA RELIGIAO*/
+
+/*INICIO ÁREA VEGETACAO*/
+.vegetacao-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/vegetacao.png');
+}
+.vegetacao-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 400px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.vegetacao-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.vegetacao-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.vegetacao-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/*FIM ÁREA VEGETAÇÃO*/
+
+/*FIM ÁREA PRINCIPAL*/
+
+/*pg moçambique*/
+
+/*INICIO ÁREA PRINCIPAL*/
+
+/*INICIO ÁREA GEOGRAFIA*/
+.geografia-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/geografia.png');
+}
+.geografia-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 350px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.geografia-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.geografia-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.geografia-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/*FIM ÁREA GEOGRAFIA*/
+
+/*INICIO DA ÁREA CULTURA*/
+.cultura-post{
+    width: 100%;
+    height: 920px;
+    background-image: url('/belezas/assets/images/cultura.png');
+}
+.cultura-post h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    padding-top: 350px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.cultura-content{
+    width: 100%;
+    height: 920px;
+    background-color: #FF6200;
+}
+.cultura-text{
+    padding-top: 200px;
+    margin-left: 100px;
+    width: 1150px;
+    height: 400px;
+}
+.cultura-text p{
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+.gallery img {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.gallery img:hover {
+    border: 2px solid #007BFF;
+    transform: scale(1.1);
+}
+
+
+/*FIM DA ÁREA CULTURA*/
+
+/*FIM DA ÁREA PRINCIPAL*/
