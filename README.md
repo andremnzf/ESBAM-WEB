@@ -1,1 +1,1 @@
-E aí, tudo bem? Este repositório é onde guardo meus projetos da faculdade de Análise e Desenvolvimento de Sistemas. Se você quiser colaborar, dar dicas ou só trocar uma ideia sobre programação, será bem-vindo(a)!
+E aí, tudo bem? Este repositório é onde guardo meus projetos da faculdade de Análise e Desenvolvimento de Sistemas. Se você quiser colaborar, dar dicas, comentar ou conversar sobre programação Web, será bem-vindo(a)!
